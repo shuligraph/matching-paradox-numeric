@@ -15,5 +15,6 @@ authors:
     given-names: Jean-Michel
     affiliation: "Inria"
 repository-code: https://github.com/shuligraph/matching-paradox-sim
+doi: 10.5281/zenodo.15481720
 url: https://github.com/shuligraph/matching-paradox-sim
 type: software
