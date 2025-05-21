@@ -1,29 +1,19 @@
 cff-version: 1.0.0
-title: "matching-paradox-sim"
+title: "Matching Paradox Simulator"
 version: "1.0.0"
 date-released: 2025-05-21
 license: MIT
 authors:
   - family-names: Li
-    given-names: S.
+    given-names: Shu
     affiliation: "Inria"
     orcid: "0000-0002-4075-9885"
   - family-names: Busic
-    given-names: A.
+    given-names: Ana
     affiliation: "Inria"
   - family-names: Fourneau
-    given-names: J.M.
+    given-names: Jean-Michel
     affiliation: "Inria"
-repository-code: "https://github.com/shuligraph/matching-paradox-sim"
-preferred-citation:
-  type: conference-paper
-  authors:
-    - family-names: Busic
-      given-names: A.
-    - family-names: Fourneau
-      given-names: J.M.
-    - family-names: Li
-      given-names: S.
-  title: "Performance paradoxes in matching systems are not that rare"
-  conference: "NETGCOOP 2025"
-  year: 2025
+repository-code: https://github.com/shuligraph/matching-paradox-sim
+url: https://github.com/shuligraph/matching-paradox-sim
+type: software
