@@ -19,7 +19,7 @@ def all_independent_sets(G):
     return result
 
 def neighborhood(G, nodes):
-    return set().union(*(G.neighbors(n) for n in nodes))
+    return set().union(*(G.neighbors(n) for n in nodes)) - set()
 
 def get_V2(G):
     return {node for node in G.nodes if not G.has_edge(node, node)}
@@ -60,7 +60,7 @@ def compute_E_Io(G, ordered, mu, V2):
         if denom <= 0:
             return 0
         prod *= mu[i] / denom
-        summ += 1 / denom
+        summ += sum_neighbors / denom
     return prod * summ
 
 def compute_T_I(G, I, mu, V2):
