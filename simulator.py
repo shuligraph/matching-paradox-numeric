@@ -18,7 +18,7 @@ def all_independent_sets(adj):
 
 def neighborhood(adj, nodes):
     # Union of neighbors of all nodes in the set
-    return set().union(*(adj[n] for n in nodes))
+    return set().union(*(adj[n] for n in nodes)) - set(nodes)
 
 def get_V2(adj):
     # Nodes without self-loops
@@ -62,7 +62,7 @@ def compute_E_Io(adj, ordered, mu, V2):
         if denom <= 0:
             return 0
         prod *= mu[i] / denom
-        summ += 1 / denom
+        summ += sum_neighbors / denom
     return prod * summ
 
 def compute_T_I(adj, I, mu, V2):
