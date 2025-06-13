@@ -18,7 +18,7 @@ def all_independent_sets(adj):
 
 def neighborhood(adj, nodes):
     # Union of neighbors of all nodes in the set
-    return set().union(*(adj[n] for n in nodes)) - set(nodes)
+    return set().union(*(adj[n] for n in nodes))
 
 def get_V2(adj):
     # Nodes without self-loops
