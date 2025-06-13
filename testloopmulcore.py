@@ -19,7 +19,7 @@ def all_independent_sets(G):
     return result
 
 def neighborhood(G, nodes):
-    return set().union(*(G.neighbors(n) for n in nodes)) - set()
+    return set().union(*(G.neighbors(n) for n in nodes))
 
 def get_V2(G):
     return {node for node in G.nodes if not G.has_edge(node, node)}
