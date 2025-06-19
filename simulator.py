@@ -125,14 +125,13 @@ def run(G, mu, label="Graph"):
 if __name__ == "__main__":
     G1 = nx.Graph()
     G1.add_edges_from([
-        (1,2), (1,3), (1,4),
-        (3,4), 
-        (2,2), (3,3), (4,4)  # self-loops
+        (1,2), (2,3), (3,4), (5,4),
+        (5,1)  # self-loops
     ])
 
-    mu = {1: 0.432685, 2: 0.005861, 3: 0.141128, 4: 0.420326}
+    mu = {1: 0.111, 2: 0.10575, 3: 0.179426, 4: 0.35046, 5: 0.253364}
 
-    G1_mod1 = G1.copy(); G1_mod1.add_edge(2,3)
+    G1_mod1 = G1.copy(); G1_mod1.add_edge(2,5)
     
 
     run(G1, mu, label="G1")
