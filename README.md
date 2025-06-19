@@ -37,14 +37,14 @@ python simulator.py
 
 ```text
 --- G1 ---
-  Bottleneck set: {3}
-  Bottleneck: 0.077505
-  E[Q] = 3.509964
+  Bottleneck set: {1, 4}
+  Bottleneck: 0.077080
+  E[Q] = 7.861968
 
 --- G1_mod1 ---
-  Bottleneck set: {3}
-  Bottleneck: 0.077505
-  E[Q] = 3.510022
+  Bottleneck set: {1, 4}
+  Bottleneck: 0.077080
+  E[Q] = 8.179189
 ```
 
 ---
