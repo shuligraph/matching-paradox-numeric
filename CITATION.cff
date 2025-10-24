@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite the software and the related paper."
-title: "Numerical Computation for Performance Paradoxes in Stochastic Matching"
+title: "Numerical Computation for Performance Paradoxes in Stochastic Matching Models"
 version: "1.0.0"
 date-released: "2025-05-21"
 license: "MIT"
