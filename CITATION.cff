@@ -1,14 +1,50 @@
-cff-version: 1.0.0
-title: "Matching Paradox Simulator"
+cff-version: 1.2.0
+message: "If you use this repository, please cite the software and the related paper."
+title: "Closed-Form Exact Numerical Computation for Performance Paradoxes in Stochastic Matching"
 version: "1.0.0"
-date-released: 2025-05-21
-license: MIT
+date-released: "2025-05-21"
+license: "MIT"
+
 authors:
-  - family-names: Li
-    given-names: Shu
+  - family-names: "Li"
+    given-names: "Shu"
     affiliation: "Inria"
-    orcid: "0000-0002-4075-9885"
-repository-code: https://github.com/shuligraph/matching-paradox-sim
-doi: 10.5281/zenodo.15481720
-url: https://github.com/shuligraph/matching-paradox-sim
-type: software
+    orcid: "https://orcid.org/0000-0002-4075-9885"
+
+repository-code: "https://github.com/shuligraph/matching-paradox-numeric"
+url: "https://github.com/shuligraph/matching-paradox-numeric"
+
+doi: "10.5281/zenodo.15481720"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.15481720"
+
+keywords:
+  - stochastic matching
+  - performance paradox
+  - closed-form
+  - exact computation
+  - numerical computation
+
+abstract: >
+  Python tools for closed-form exact numerical computation in stochastic
+  matching models for simple graphs and multiple graphs, enabling precise analysis of performance paradoxes.
+
+preferred-citation:
+  type: conference-paper
+  title: "Performance Paradoxes in Matching Systems Are Not That Rare"
+  authors:
+    - family-names: "Busic"
+      given-names: "Ana"
+   - family-names: "Fourneau"
+      given-names: "Jean-Michel"
+   - family-names: "Antoine"
+      given-names: "Lunven"
+   - family-names: "Li"
+      given-names: "Shu"
+  year: 2025
+  conference: "The 12th International Conference of Networks, Games, Control and Optimization (NETGCOOP)"
+  location: "Bilbao, Spain"
+  date: "2025-10-XX"
+  url: "https://netgcoop2025.univ-avignon.fr/"
+
