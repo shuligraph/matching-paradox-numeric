@@ -1,0 +1,13 @@
+cff-version: 1.0.0
+message: "If you use this code, please cite our paper."
+title: "Performance paradox in matching models with abandonment"
+authors:
+  - family-names: Li
+    given-names: Shu
+    orcid: https://orcid.org/0000-0002-4075-9885
+data-released: 2025-06-24
+version: 1.0.0
+identifiers:
+doi: 
+repository-code: https://github.com/shuligraph/matching-abandonment
+license: MIT

@@ -1,0 +1,64 @@
+\begin{thebibliography}{10}
+
+\bibitem{BaYe93}
+F.~Ball and G.~F. Yeo.
+\newblock Lumpability and marginalisability for continuous-time markov chains.
+\newblock {\em Journal of Applied Probability}, 30(3):518–528, 1993.
+
+\bibitem{BMMR20}
+J.~Begeot, I.~Marcovici, P.~Moyal, and Y.~Rahme.
+\newblock A general stochastic matching model on multigraphs.
+\newblock {\em Latin American Journal of Probability and Mathematical
+  Statistics}, 18(1):1325, 2021.
+
+\bibitem{BCDF24}
+A.~Bu{\v s}i{\'c}, A.~Cadas, J.~Doncel, and J.-M. Fourneau.
+\newblock Performance paradox of dynamic matching models under greedy policies.
+\newblock {\em Queueing Systems}, 107(3-4):257--293, Sept. 2024.
+
+\bibitem{BGMa13}
+A.~Bu{\v s}i{\'c}, V.~Gupta, and J.~Mairesse.
+\newblock Stability of the {{Bipartite Matching Model}}.
+\newblock {\em Advances in Applied Probability}, 45(2):351--378, June 2013.
+
+\bibitem{CDFB21}
+A.~Cadas, J.~Doncel, J.-M. Fourneau, and A.~Bu{\v s}i{\'c}.
+\newblock Flexibility can hurt dynamic matching system performance.
+\newblock {\em SIGMETRICS Perform. Eval. Rev.}, 49(3):37--42, Mar. 2022.
+
+\bibitem{gurvich2014}
+I.~Gurvich and A.~Ward.
+\newblock On the dynamic control of matching queues.
+\newblock {\em Stochastic Systems}, 4(2):479--523, Dec. 2014.
+
+\bibitem{li2025b}
+S.~Li.
+\newblock Matching paradox, 2025.
+\newblock \url{https://github.com/shuligraph/matching-paradox-sim.git}.
+
+\bibitem{li2025a}
+S.~Li.
+\newblock Matching paradox with abandonment, 2025.
+\newblock \url{https://github.com/shuligraph/matching-abandonment.git}.
+
+\bibitem{li2025}
+S.~Li.
+\newblock Matching paradox with cost, 2025.
+\newblock \url{https://github.com/shuligraph/matching-cost.git}.
+
+\bibitem{MaMo18}
+J.~Mairesse and P.~Moyal.
+\newblock Stability of the stochastic matching model.
+\newblock {\em Journal of Applied Probability}, 53(4):1064--1077, Dec. 2016.
+
+\bibitem{MBMa21}
+P.~Moyal, A.~Bu{\v s}i{\'c}, and J.~Mairesse.
+\newblock A product form for the general stochastic matching model.
+\newblock {\em Journal of Applied Probability}, 58(2):449--468, June 2021.
+
+\bibitem{nazari2019}
+M.~Nazari and A.~L. Stolyar.
+\newblock Reward maximization in general dynamic matching systems.
+\newblock {\em Queueing Systems}, 91(1-2):143--170, Feb. 2019.
+
+\end{thebibliography}
