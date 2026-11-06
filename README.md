@@ -1,95 +1,48 @@
-# matching-paradox-sim
+# Performance Paradoxes in Matching Systems
 
-Python implementation for the paper  
-**“Performance paradoxes in matching systems are not that rare”**  
-_A. Busic · J.M. Fourneau · **S. Li** — NETGCOOP 2025_
+Numerical companion code for **Performance paradoxes in matching systems are not that rare** (NETGCOOP 2025).
 
----
+This repository evaluates stability conditions, bottleneck sets, and stationary mean queue lengths in stochastic matching networks. It includes a fixed example comparing a graph with an added-edge variant, and a randomized search for arrival distributions exhibiting a performance paradox.
 
 ## Contents
 
-| File | Purpose |
-|------|---------|
-| `simulator.py` | Core algorithm |
-| `README.md` | Project documentation (this file) |
-| `CITATION.cff` | Citation metadata (YAML) |
-| `references.bib` | BibTeX entry for the paper |
-| `requirements.txt` | Python dependencies |
-| `LICENSE` | MIT License |
-| `.gitignore` | Standard Python ignores |
+- `simulator.py`: numerical evaluation of the formulas and a fixed graph comparison.
+- `testloopmulcore.py`: parallel randomized search for cases where adding an edge increases the mean queue length.
+- `CITATION.cff` and `references.bib`: citation metadata.
 
----
+Despite its filename, `simulator.py` evaluates stationary formulas rather than simulating sample paths.
 
-## Quick Start
+## Quick start
 
 ```bash
-git clone https://github.com/shuligraph/matching-paradox-sim.git
-cd matching-paradox-sim
-
+git clone https://github.com/shuligraph/matching-paradox-numeric.git
+cd matching-paradox-numeric
 python -m venv .venv
-source .venv/bin/activate          
-
-pip install -r requirements.txt
-python simulator.py                
-````
-
-### Example output
-
-```text
---- G1 ---
-  Bottleneck set: {1, 4}
-  Bottleneck: 0.077080
-  E[Q] = 7.861968
-
---- G1_mod1 ---
-  Bottleneck set: {1, 4}
-  Bottleneck: 0.077080
-  E[Q] = 8.179189
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python simulator.py
 ```
 
----
+The script reports the bottleneck set, its stability margin, and the expected total number of queued items for each stable graph.
 
-## Using Your Graph
+For the optional randomized search, install its additional dependencies and run:
 
-1. **Open** `simulator.py` and scroll to the `# -- Example --` block.
+```bash
+python -m pip install numpy tqdm
+python testloopmulcore.py
+```
 
-2. **Replace** that block with your graph:
+The search currently uses all available CPU cores and stops at the first detected example. Its random seed is not fixed, so results may vary between runs.
 
-   ```python
-   G = nx.Graph()
-   G.add_edges_from([(1, 2), (1, 3), (2, 3), (3, 4)])            
+## Custom examples
 
-   mu = {1: 0.15, 2: 0.30, 3: 0.25, 4: 0.10}
+Edit the `# -- Example --` block in `simulator.py` to specify the graph, arrival probabilities `mu`, and the edge to add. Keep the same node labels and arrival probabilities in both graphs, then call `run` for each graph separately.
 
-   G1_mod1 = G1.copy(); G1_mod1.add_edge(1, 4)  
+The computation enumerates independent sets and their permutations, so it is intended for small graphs. Calculations use floating-point arithmetic; comparisons close to the stability boundary require care.
 
-   ```
+## Reference
 
-3. **Run** the script again:
+**Performance paradoxes in matching systems are not that rare**, NETGCOOP 2025.  
+DOI: [10.1007/978-3-032-09315-8_3](https://doi.org/10.1007/978-3-032-09315-8_3).
 
-   ```bash
-   python simulator.py
-   ```
-
-   The script will print stability, the bottleneck set, and the expected
-   queue length $E[G,&alpha;]$.
-
----
-
-## Contributing
-
-Bug reports, documentation improvements, and additional examples are welcome.
-For large changes, please open an issue first.
-
----
-
-## License
-
-Released under the **MIT License** (see `LICENSE`).
-
----
-
-## Citation
-
-See `CITATION.cff` for software citation and `references.bib` for the paper’s
-BibTeX entry.
+Please cite the associated paper when using this code in research.
